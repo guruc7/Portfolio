@@ -1,141 +1,49 @@
-.hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem rem;
-  /* background-color: #121212; */
-  color: #ffffff;
-  flex-wrap: wrap;
+.hero-section-dark {
+  background: linear-gradient(135deg, #0d0d25, #1a1a40);
+  color: #fff;
+  border-radius: 16px;
 }
 
-.hero-left {
-  flex: 1;
-  max-width: 600px;
+.text-accent {
+  color: #00bfff; /* Bright cyan-blue */
 }
 
-.hero-left h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-left h2 {
-  font-size: 1.5rem;
-  color: #bbbbbb;
-  margin-bottom: 1rem;
-}
-
-.hero-left p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.highlight {
-  color: #64ffda;
-}
-
-.cta-buttons .btn {
-  margin-right: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #64ffda;
-  color: #121212;
+.btn-accent {
+  background-color: #00bfff;
   border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
-.cta-buttons .btn:hover {
-  background-color: #f4efab;
-  color: #64ffda;
+.btn-accent:hover {
+  background-color: #009acd;
 }
 
-.btn-secondary {
-  background-color: transparent;
-  border: 2px solid #64ffda;
-  color: #64ffda;
+.btn-outline-accent {
+  border: 2px solid #00bfff;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
-.hero-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  height: 100%;
+.btn-outline-accent:hover {
+  background-color: #00bfff;
+  color: #fff !important;
 }
 
-.hero-right img {
-  max-width: 100%;
+.shadow-glow {
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.4);
+}
+
+.text-muted {
+  color: #aaa !important;
+}
+.img-fluid {
+    margin-top: 50px;
   height: auto;
-  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
+  .hero-section-dark {
+    text-align: center;
     padding: 2rem 1rem;
   }
-
-  .hero-left {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .hero-left h1 {
-    font-size: 2rem;
-  }
-
-  .hero-left h2 {
-    font-size: 1.2rem;
-  }
-
-  .hero-left p {
-    font-size: 0.9rem;
-  }
-
-  .cta-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-buttons .btn {
-    margin: 0.5rem 0;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .hero-right {
-    margin-top: 1rem;
-  }
 }
-
-@media (max-width: 480px) {
-  .hero-section {
-    padding: 1.5rem 0.5rem;
-  }
-
-  .hero-left h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-left h2 {
-    font-size: 1rem;
-  }
-
-  .hero-left p {
-    font-size: 0.8rem;
-  }
-
-  .cta-buttons .btn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .hero-right img {
-    max-width: 90%;
-  }
-}
-
